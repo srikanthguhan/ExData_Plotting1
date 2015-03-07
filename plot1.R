@@ -14,6 +14,7 @@ powerFeb=subset(power, Date ==  "2007-02-01"| Date== "2007-02-02")
 hist(powerFeb[,3],breaks = 25,xlab = "Global Active Power (kilowatts)",
      col = "red",ylab="Frequency", main = "Global Active Power",
      ylim = c(0,1200),xlim=c(0,6))
+##Default size of the image is 480x480; so no need to specify
 dev.copy(png,file="plot1.png")
 dev.off()
 ## Just wanted to check the plot before making a PNG file out of it

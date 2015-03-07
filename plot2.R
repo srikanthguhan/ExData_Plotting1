@@ -15,6 +15,7 @@ dateTime<-paste(powerFeb$Date,powerFeb$Time)
 powerFeb$dateTime<-as.POSIXct(dateTime)
 plot(powerFeb$Global_active_power~powerFeb$dateTime,type="l",
      ylab="Global Active Power (kilowatts)", xlab="")
+##Default size of the image is 480x480; so no need to specify
 dev.copy(png,file="plot2.png")
 dev.off()
 ## Just wanted to check the plot before making a PNG file out of it

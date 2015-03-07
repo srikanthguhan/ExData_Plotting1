@@ -23,6 +23,7 @@ legend("topright",
        legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),
        col=c("black","red","blue"), lwd=1, lty=c(1,1,1),
        pch=c(NA,NA,NA))
+##Default size of the image is 480x480; so no need to specify
 dev.copy(png,file="plot3.png")
 dev.off()
 ## Just wanted to check the plot before making a PNG file out of it
